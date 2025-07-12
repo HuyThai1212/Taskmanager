@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Task List</h1>
+
+    <div class="form-group">
+        <input type="text" id="taskName" placeholder="Họ và tên">
+        <input type="text" id="taskType" placeholder="Việc">
+        <input type="date" id="taskDate">
+        <input type="number" id="taskDuration" placeholder="Thời lượng (giờ)">
+        <label for="taskPeriod">Thời gian:</label>
+        <select id="taskPeriod">
+            <option value="">--Chọn--</option>
+            <option value="Sáng">Sáng</option>
+            <option value="Chiều/Tối">Chiều/Tối</option>
+        </select>
+        <button onclick="addTask()">Thêm / Cập nhật</button>
+    </div>
+
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Việc</th>
+                <th>Ngày</th>
+                <th>Thời lượng (giờ)</th>
+                <th>Thời gian</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
